@@ -7,7 +7,7 @@ import pandas as pd
 app = Flask(__name__)
 
 log_reg=pickle.load(open('model.pkl','rb'))
-app.config['SERVER_NAME']="127.0.0.1:5000"
+app.config['SERVER_NAME']="https://edp-spam-classifier.herokuapp.com/"
 @app.route('/')
 def hello_world():
     return "hello"
